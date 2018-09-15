@@ -3,7 +3,9 @@ import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import '../assets/app.styl'
+import SvgIcon from 'vue-svgicon'
 
+Vue.use(SvgIcon)
 Vue.config.productionTip = false
 
 new Vue({

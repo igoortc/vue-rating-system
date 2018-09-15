@@ -80,5 +80,10 @@ module.exports = {
       to: resolve('dist/static/images'),
       toType: 'dir'
     }])
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../src')
+    }
+  }
 }

@@ -1,3 +1,7 @@
+// Importing colors
+@import "colors"
+
+// Setting up font styles
 font-url(file)
   return './fonts/' + file
 
@@ -11,6 +15,71 @@ webfont('ProximaNovaSoftBold', 'proxima-nova-soft', 'bold', 'italic')
 webfont('ProximaNovaSoftRegular', 'proxima-nova-soft', 'regular', 'italic')
 webfont('ProximaNovaSoftSemibold', 'proxima-nova-soft', 'semibold', 'italic')
 
-h1
-  color: red
-  font-family: 'ProximaNovaSoftBold'
+// SVG rules
+.svg-icon
+    display inline-block
+    width 24px
+    height 24px
+    color inherit
+    vertical-align middle
+    fill none
+    stroke currentColor
+
+svg-fill
+    fill currentColor
+    stroke none
+
+*
+  font-family 'ProximaNovaSoftRegular'
+
+.toolbar-title
+  font-family 'ProximaNovaSoftSemibold'
+  color lighterGreen
+  font-size 18px !important
+
+.sidebar
+  background-color lighterGray !important
+  box-shadow inset -1px 0 0 0 lightGray !important
+
+.sidebar-list
+  .v-list__tile
+    padding 0 20px
+    
+  .complete
+    .v-list__tile
+      height 60px
+      box-shadow inset 0 -1px 0 0 lightGray
+
+    .v-list__tile__title
+      font-size 12px
+      font-family 'ProximaNovaSoftSemibold'
+      text-transform uppercase
+  
+  .current
+    .v-list__tile
+      height 118px
+      background-color rgba(0, 0, 0, 0.02)
+      box-shadow inset 0 -1px 0 0 lightGray, inset -2px 0 0 0 secondary
+
+    .v-list__tile__title
+      font-family 'ProximaNovaSoftBold'
+      color secondary !important
+      font-size 13px
+      text-transform uppercase
+    
+    .v-list__tile__sub-title
+      color primaryGray !important
+      font-family 'ProximaNovaSoftMedium'
+
+.cycle
+  box-shadow: inset 0 -1px 0 0 lightGray;
+
+  .v-list__tile__title
+    font-size 14px
+    line-height 20px
+    color tertiaryGray
+    font-family 'ProximaNovaSoftMedium'
+  
+  .v-progress-linear__bar
+    div
+      border-radius 5px
