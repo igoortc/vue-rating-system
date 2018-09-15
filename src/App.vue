@@ -1,13 +1,20 @@
 <template>
-  <div class="full-width center-content">
-    <hello-component name="World" />
-  </div>
+  <v-app>
+    <Sidebar/>
+    <Menu/>
+    <v-content>
+      <router-view/>
+    </v-content>
+  </v-app>
 </template>
+
 <script>
-import HelloComponent from './components/HelloComponent.vue'
+import Sidebar from './components/Dashboard/Sidebar.vue'
+import Menu from './components/Dashboard/Menu.vue'
 export default {
   components: {
-    HelloComponent
+    Sidebar,
+    Menu
   }
 }
 </script>

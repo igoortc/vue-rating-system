@@ -1,7 +1,16 @@
-.full-width
-  width 100%
-  
-.center-content
-  display flex
-  justify-content center
-  align-items center
+font-url(file)
+  return './fonts/' + file
+
+webfont(family, file, weight = 'normal')
+  @font-face
+    font-family family
+    src url(font-url(file + '-' + weight +  '-webfont.ttf')) format('truetype')
+
+webfont('ProximaNovaSoftMedium', 'proxima-nova-soft', 'medium', 'italic')
+webfont('ProximaNovaSoftBold', 'proxima-nova-soft', 'bold', 'italic')
+webfont('ProximaNovaSoftRegular', 'proxima-nova-soft', 'regular', 'italic')
+webfont('ProximaNovaSoftSemibold', 'proxima-nova-soft', 'semibold', 'italic')
+
+h1
+  color: red
+  font-family: 'ProximaNovaSoftBold'
