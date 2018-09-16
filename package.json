@@ -9,13 +9,15 @@
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test": "jest",
-    "svg": "vsvg -s ./static/svg -t ./src/icons"
+    "svg": "vsvg -s ./static/svg -t ./src/icons",
+    "start": "node server.js"
   },
   "author": "Igor Tannus Correa",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.0.1",
     "axios": "^0.18.0",
+    "express": "^4.16.3",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue-star-rating": "^1.6.0",
