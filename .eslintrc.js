@@ -10,7 +10,8 @@ module.exports = {
     'vue'
   ],
   rules: {
-    'no-new': 'off'
+    'no-new': 'off',
+    'vue/require-prop-types': 'off'
   },
   env: {
     browser: true,

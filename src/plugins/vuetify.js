@@ -12,6 +12,7 @@ Vue.use(Vuetify, {
     secondaryGray: '#616161',
     tertiaryGray: '#BDBDBD',
     lightGray: '#EEE',
-    lighterGray: '#F5F5F5'
+    lighterGray: '#F5F5F5',
+    white: '#FFF'
   }
 })

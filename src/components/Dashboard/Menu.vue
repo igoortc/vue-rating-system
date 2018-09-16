@@ -8,8 +8,7 @@
     <v-btn icon>
       <svgicon
         name="icon-arrow-back"
-        color="#b3e7d8"
-        class="icon-primary"/>
+        color="#b3e7d8"/>
     </v-btn>
     <v-layout align-center>
       <v-flex class="text-xs-center">
@@ -22,14 +21,12 @@
     <v-btn icon>
       <svgicon
         name="icon-local-library"
-        color="#b3e7d8"
-        class="icon-primary"/>
+        color="#b3e7d8"/>
     </v-btn>
     <v-btn icon>
       <svgicon
         name="icon-menu-options-vertical"
-        color="#b3e7d8"
-        class="icon-primary"/>
+        color="#b3e7d8"/>
     </v-btn>
   </v-toolbar>
 </template>
