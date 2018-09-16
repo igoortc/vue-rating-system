@@ -2,6 +2,8 @@
 
 > Vue.js SPA that posts a request to an API, including rating and review.
 
+📺 Live version: https://vue-rating-system.herokuapp.com/
+
 ## Project setup
 
 ``` bash
